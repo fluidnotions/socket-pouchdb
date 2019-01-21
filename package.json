@@ -32,6 +32,9 @@
     "dev-server": "./bin/dev-server.js",
     "coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
   },
+  "peerDependencies": {
+    "pouchdb": "^7.0.0"
+  },
   "dependencies": {
     "argsarray": "0.0.1",
     "blob-util": "^1.1.1",
@@ -42,7 +45,6 @@
     "eval": "^0.1.0",
     "inherits": "^2.0.1",
     "lie": "^2.6.0",
-    "pouchdb": "^6.0.0",
     "pouchdb-binary-util": "^1.0.0",
     "pouchdb-promise": "^6.0.7"
   },
