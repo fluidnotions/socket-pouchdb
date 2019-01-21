@@ -1,6 +1,8 @@
 socket-pouch [![Build Status](https://travis-ci.org/nolanlawson/socket-pouch.svg)](https://travis-ci.org/nolanlawson/socket-pouch)
 =====
 
+This version is based on nolanlawson version.
+
 ```js
 // This pouch is powered by web sockets!
 var db = new PouchDB('mydb', {adapter: 'socket', url: 'ws://localhost:80'});
@@ -20,12 +22,12 @@ This adapter passes [the full PouchDB test suite](https://travis-ci.org/nolanlaw
 Usage
 ---
 
-    $ npm install socket-pouch
+    $ npm install socket-pouchdb
 
 #### Server
 
 ```js
-var socketPouchServer = require('socket-pouch/server');
+var socketPouchServer = require('socket-pouchdb/server');
 
 socketPouchServer.listen(80);
 ```
@@ -58,7 +60,7 @@ The same rules apply, but you have to notify PouchDB of the new adapter:
 
 ```js
 var PouchDB = require('pouchdb');
-PouchDB.adapter('socket', require('socket-pouch/client'));
+PouchDB.adapter('socket', require('socket-pouchdb/client'));
 ```
 
 API
